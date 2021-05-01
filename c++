@@ -48,22 +48,22 @@ int main()
 
         for(int j = (tamanho/2); j < tamanho; j++)
         {
-            vetor[j] = vetor[j] - 1; //trunca e uma posição a esquerda
+               if(vetor[j] != ' ')
+                vetor[j] = vetor[j] - 1; //trunca e uma posição a esquerda
         }
 
         for(int j = 0; j < (tamanho/2); j++)
         {
-            cout << v[j];
+
+            for(int j = (tamanho/2); j < tamanho; j++)
+            {
+                if(vetor[j] != ' ')
+                    cout << vetor[j];
+            }
+
+            cout << endl;
         }
-
-        for(int j = (tamanho/2); j < tamanho; j++)
-        {
-
-            cout << vetor[j];
-        }
-
-        cout << endl;
-  }
+   }
     
     return 0;
 }
